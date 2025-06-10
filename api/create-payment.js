@@ -20,14 +20,16 @@ export default async function handler(req, res) {
   }
 
   const params = new URLSearchParams();
-  params.append("merchant", "495742");
-  params.append("secret", "kpdj7DaJ7v6SHSsazlFc0g2NHzL4T4WZ");
-  params.append("price", "10000");
-  params.append("label", nickname);
-  params.append("curr", "CZK");
-  params.append("method", "ALL");
-  params.append("redirect", "https://hamocreator.github.io/THANK_YOU/");
-  params.append("prepareOnly", "true");
+ params.append("merchant", "495742");
+params.append("secret", "kpdj7DaJ7v6SHSsazlFc0g2NHzL4T4WZ");
+params.append("price", "10000");
+params.append("label", nickname);
+params.append("refId", Date.now().toString()); // ← přidáno!
+params.append("curr", "CZK");
+params.append("method", "ALL");
+params.append("redirect", "https://hamocreator.github.io/THANK_YOU/");
+params.append("prepareOnly", "true");
+
 
   try {
     const response = await fetch("https://payments.comgate.cz/v1.0/create", {
