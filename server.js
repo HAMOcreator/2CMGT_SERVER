@@ -24,7 +24,7 @@ app.post('/notify', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('ComGate Server is running');
+  res.send('ComGate server is running');
 });
 
 const port = process.env.PORT || 3001;
