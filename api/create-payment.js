@@ -1,28 +1,24 @@
 import fetch from 'node-fetch';
 
 export default async function handler(req, res) {
-  // CORS hlavičky
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  // 🌐 CORS nastavení
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
   if (req.method === 'OPTIONS') {
-    return res.status(200).end(); // odpověď na preflight
+    return res.status(200).end(); // preflight OK
   }
 
   if (req.method !== 'POST') return res.status(405).end();
-  const { nickname } = req.body;
 
-  if (!nickname) {
-    return res.status(400).json({ error: 'Missing nickname' });
-  }
+  const { nickname } = req.body;
 
   const params = new URLSearchParams();
   params.append("merchant", "495742");
   params.append("secret", "kpdj7DaJ7v6SHSsazlFc0g2NHzL4T4WZ");
   params.append("price", "10000");
   params.append("label", nickname);
-  params.append("refId", `ref_${Date.now()}`);
   params.append("curr", "CZK");
   params.append("method", "ALL");
   params.append("redirect", "https://hamocreator.github.io/THANK_YOU/");
@@ -46,6 +42,6 @@ export default async function handler(req, res) {
       res.status(500).json({ error: "Chyba ComGate", detail: data });
     }
   } catch (error) {
-    res.status(500).json({ error: "Chyba serveru", detail: error.message });
+    res.status(500).json({ error: "Chyba spojení", detail: error.message });
   }
 }
