@@ -1,18 +1,23 @@
-import fetch from 'node-fetch';
-
 export default async function handler(req, res) {
-  // 🌐 CORS nastavení
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  // 👉 CORS hlavičky
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
+  // 👉 Odpověď na preflight (OPTIONS)
   if (req.method === 'OPTIONS') {
-    return res.status(200).end(); // preflight OK
+    return res.status(200).end();
   }
 
-  if (req.method !== 'POST') return res.status(405).end();
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: "Method not allowed" });
+  }
 
   const { nickname } = req.body;
+
+  if (!nickname || typeof nickname !== "string") {
+    return res.status(400).json({ error: "Missing nickname" });
+  }
 
   const params = new URLSearchParams();
   params.append("merchant", "495742");
@@ -37,11 +42,11 @@ export default async function handler(req, res) {
     const data = Object.fromEntries(new URLSearchParams(text));
 
     if (data.code === "0") {
-      res.status(200).json({ redirect: data.redirect });
+      return res.status(200).json({ redirect: data.redirect });
     } else {
-      res.status(500).json({ error: "Chyba ComGate", detail: data });
+      return res.status(500).json({ error: "Chyba ComGate", detail: data });
     }
   } catch (error) {
-    res.status(500).json({ error: "Chyba spojení", detail: error.message });
+    return res.status(500).json({ error: "Chyba spojení", detail: error.message });
   }
 }
