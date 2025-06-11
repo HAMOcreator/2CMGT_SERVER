@@ -1,0 +1,218 @@
+[
+  {
+    "refId": "standard_neperlivá_voda",
+    "type": "Standard",
+    "name": "Neperlivá voda",
+    "priceCZK": 35
+  },
+  {
+    "refId": "standard_limo",
+    "type": "Standard",
+    "name": "Limo",
+    "priceCZK": 40
+  },
+  {
+    "refId": "standard_káva",
+    "type": "Standard",
+    "name": "Káva",
+    "priceCZK": 45
+  },
+  {
+    "refId": "standard_punch_bowl",
+    "type": "Standard",
+    "name": "Punch bowl",
+    "priceCZK": 130
+  },
+  {
+    "refId": "standard_gin_tonic",
+    "type": "Standard",
+    "name": "Gin tonic",
+    "priceCZK": 140
+  },
+  {
+    "refId": "standard_pink_gin",
+    "type": "Standard",
+    "name": "Pink gin",
+    "priceCZK": 140
+  },
+  {
+    "refId": "standard_rum_cola",
+    "type": "Standard",
+    "name": "Rum cola",
+    "priceCZK": 120
+  },
+  {
+    "refId": "standard_aperol",
+    "type": "Standard",
+    "name": "Aperol",
+    "priceCZK": 130
+  },
+  {
+    "refId": "standard_hugo",
+    "type": "Standard",
+    "name": "Hugo",
+    "priceCZK": 130
+  },
+  {
+    "refId": "sale_neperlivá_voda",
+    "type": "Sale",
+    "name": "Neperlivá voda",
+    "priceCZK": 18
+  },
+  {
+    "refId": "sale_limo",
+    "type": "Sale",
+    "name": "Limo",
+    "priceCZK": 20
+  },
+  {
+    "refId": "sale_káva",
+    "type": "Sale",
+    "name": "Káva",
+    "priceCZK": 23
+  },
+  {
+    "refId": "sale_punch_bowl",
+    "type": "Sale",
+    "name": "Punch bowl",
+    "priceCZK": 65
+  },
+  {
+    "refId": "sale_gin_tonic",
+    "type": "Sale",
+    "name": "Gin tonic",
+    "priceCZK": 70
+  },
+  {
+    "refId": "sale_pink_gin",
+    "type": "Sale",
+    "name": "Pink gin",
+    "priceCZK": 70
+  },
+  {
+    "refId": "sale_rum_cola",
+    "type": "Sale",
+    "name": "Rum cola",
+    "priceCZK": 60
+  },
+  {
+    "refId": "sale_aperol",
+    "type": "Sale",
+    "name": "Aperol",
+    "priceCZK": 65
+  },
+  {
+    "refId": "sale_hugo",
+    "type": "Sale",
+    "name": "Hugo",
+    "priceCZK": 65
+  },
+  {
+    "refId": "reward_neperlivá_voda",
+    "type": "Reward",
+    "name": "Neperlivá voda",
+    "priceCZK": 1
+  },
+  {
+    "refId": "reward_limo",
+    "type": "Reward",
+    "name": "Limo",
+    "priceCZK": 1
+  },
+  {
+    "refId": "reward_káva",
+    "type": "Reward",
+    "name": "Káva",
+    "priceCZK": 1
+  },
+  {
+    "refId": "reward_punch_bowl",
+    "type": "Reward",
+    "name": "Punch bowl",
+    "priceCZK": 1
+  },
+  {
+    "refId": "reward_gin_tonic",
+    "type": "Reward",
+    "name": "Gin tonic",
+    "priceCZK": 1
+  },
+  {
+    "refId": "reward_pink_gin",
+    "type": "Reward",
+    "name": "Pink gin",
+    "priceCZK": 1
+  },
+  {
+    "refId": "reward_rum_cola",
+    "type": "Reward",
+    "name": "Rum cola",
+    "priceCZK": 1
+  },
+  {
+    "refId": "reward_aperol",
+    "type": "Reward",
+    "name": "Aperol",
+    "priceCZK": 1
+  },
+  {
+    "refId": "reward_hugo",
+    "type": "Reward",
+    "name": "Hugo",
+    "priceCZK": 1
+  },
+  {
+    "refId": "standard_párek_v_rohlíku_-_kečup",
+    "type": "Standard",
+    "name": "Párek v rohlíku - kečup",
+    "priceCZK": 35
+  },
+  {
+    "refId": "reward_párek_v_rohlíku_-_kečup",
+    "type": "Reward",
+    "name": "Párek v rohlíku - kečup",
+    "priceCZK": 1
+  },
+  {
+    "refId": "sale_párek_v_rohlíku_-_kečup",
+    "type": "Sale",
+    "name": "Párek v rohlíku - kečup",
+    "priceCZK": 18
+  },
+  {
+    "refId": "standard_špekáčekchleba_horčice_kečup",
+    "type": "Standard",
+    "name": "Špekáček,chleba, horčice/ kečup",
+    "priceCZK": 75
+  },
+  {
+    "refId": "reward_špekáčekchleba_horčice_kečup",
+    "type": "Reward",
+    "name": "Špekáček,chleba, horčice/ kečup",
+    "priceCZK": 1
+  },
+  {
+    "refId": "sale_špekáčekchleba_horčice_kečup",
+    "type": "Sale",
+    "name": "Špekáček,chleba, horčice/ kečup",
+    "priceCZK": 38
+  },
+  {
+    "refId": "standard_párek_v_rohlíku_-_hořčice",
+    "type": "Standard",
+    "name": "Párek v rohlíku - hořčice",
+    "priceCZK": 35
+  },
+  {
+    "refId": "reward_párek_v_rohlíku_-_hořčice",
+    "type": "Reward",
+    "name": "Párek v rohlíku - hořčice",
+    "priceCZK": 1
+  },
+  {
+    "refId": "sale_párek_v_rohlíku_-_hořčice",
+    "type": "Sale",
+    "name": "Párek v rohlíku - hořčice",
+    "priceCZK": 18
+  }
+]
